@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercícios</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    
+    <header>
+<h1>Conversor de moedas!!!</h1>
+
+
+    </header>
+    <section>
+        <div>
+            <p>Selecione qual moeda quer converter:</p>
+
+            
+             
+            <input type="radio" name="radmoeda" id="usdolar" checked >
+            <label for="usdolar">USD</label>
+            <input type="radio" name="radmoeda" id="euro">
+            <label for="euro">EUR</label>
+            <input type="radio" name="radmoeda" id="real">
+            <label for="real">BRL</label> 
+
+            <p>Isira o valor a ser convertido:
+            <input type="number" name="nvalor" id="txtvalor"></p>  
+
+            <p>Selecione para qual moeda quer converter: </p>
+            <input type="radio" name="radmoedac" id="realbrasil"checked >
+            <label for="realbrasil">BRL</label>
+            <input type="radio" name="radmoedac" id="usdolar">
+            <label for="usdolar">USD</label>
+            <input type="radio" name="radmoedac" id="euro">
+            <label for="euro">EUR</label>
+            
+
+            <p>
+                <input type="button" value="Converter" onclick="converter()">
+            </p>
+
+            
+                
+
+
+
+
+            
+
+
+        </div>
+
+        <div id="res">
+            <p> Informe os campos acima para converter o valor! </p>
+
+
+
+        </div>
+
+
+    </section>
+    <footer>
+
+        <p>&copy;Medwebdev</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
