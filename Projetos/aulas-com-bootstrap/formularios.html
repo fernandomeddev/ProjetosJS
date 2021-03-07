@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="/Projetos/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
         <div class="form-group">
 
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>   
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required autofocus tabindex="2" disabled>   
         </div>
     </form>
         <div class="form-group">
@@ -21,7 +21,7 @@
         </div>
         <div class="form-group">
             <label for="nascimento">Nascimento</label>
-            <input type="date" name="nascimento" id="nascimento" class="form-control" required min="2021-01-01" max="2021-1-15">           
+            <input type="date" name="nascimento" id="nascimento" min="2021-01-01" max="2021-1-15" class="form-control" >           
         </div>
         <br>
         <div class="form-group">
@@ -31,17 +31,45 @@
             <label class="form-check-label" for="flexRadioDefault1">Feminino</label> 
         </div>
         <br>
-        <div></div>
+        <div>
             <select class="form-select form-select mb-3" aria-label=".form-select-lg example">
               <option selected>Estado Civil</option>
               <option value="casado">Casado</option>
               <option value="solteiro">Solteiro</option>
             </select>
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label for="semana">semana</label>
+            <input type="week" name="mes" id="mes" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label for="time">Hora</label>
+            <input type="time" name="time" id="time" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <input type="text" list="navegadores">
+            <datalist id="navegadores">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Safari"></option>
+                <option value="Edge"></option>
+            </datalist>
+        </div>
+
+            <input type="hidden" name="id" value="1">
+        <br>
         <div>
             <button type="submit" class="btn btn-primary">Cadastrar</button> 
         </div>  
 
     </form>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Projetos/js/bootstrap.min.js.map"></script>
 </body>
 </html>
