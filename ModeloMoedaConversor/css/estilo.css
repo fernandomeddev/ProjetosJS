@@ -1,8 +1,6 @@
 body {
-    background-image: url(moeda.jpg);
     background-color: rgba(20, 20, 121, 0.719);
     font: normal 20pt Arial;
-    
 
 }
 
@@ -19,9 +17,10 @@ width: 500px;
 margin: auto;
 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.411);
 font: normal 20px Arial;
+text-align: left;
 }
 div {
-    text-align: center;
+    text-align: left;
     font: italic;
 }
 footer {
